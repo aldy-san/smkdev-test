@@ -41,13 +41,3 @@ const highestPalindrome = (s, k, pos = 0, lastCycle = false) => {
 }
 console.log(highestPalindrome('3943', 1))
 console.log(highestPalindrome('932239', 2))
-
-//console.log(highestPalindrome('11331', 4))
-//console.log(highestPalindrome('777', 0))
-//console.log(highestPalindrome('5', 1))
-//console.log(highestPalindrome('932239', 2))
-//console.log(highestPalindrome('3943', 4))
-//console.log(highestPalindrome('11331', 4))
-//console.log(highestPalindrome('12321', 1))
-//console.log(highestPalindrome('0011', 1))
-//console.log(highestPalindrome('092282', 3))
