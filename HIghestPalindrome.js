@@ -28,7 +28,6 @@ const highestPalindrome = (s, k, pos = 0, lastCycle = false) => {
             newK -= 2
         }
     }
-    console.log(string[pos], string[endPos], lastCycle)
     if(string[pos] !== string[endPos]) return -1
 
     if(endPos - pos === 1 || endPos - pos === 0){
