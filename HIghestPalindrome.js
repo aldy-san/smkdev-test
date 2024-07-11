@@ -40,6 +40,6 @@ const highestPalindrome = (s, k, pos = 0, lastCycle = false) => {
         return highestPalindrome(string.join(''), newK, pos+1, lastCycle)
     }
 }
-//console.log(highestPalindrome('3943', 1))
-//console.log(highestPalindrome('932239', 2))
-console.log(highestPalindrome('1234221', 3))
+console.log(highestPalindrome('3943', 1))
+console.log(highestPalindrome('932239', 2))
+//console.log(highestPalindrome('1234221', 3))
