@@ -21,13 +21,14 @@ const highestPalindrome = (s, k, pos = 0, lastCycle = false) => {
     } else if (pos === endPos && (k === 1 || (k >= 1 && lastCycle)) ){
         string[pos] = '9'
         newK--
-    } else if(k >= 2 && !lastCycle){
+    } else if(k >= 2 && lastCycle){
         if(string[pos] < 9){
             string[pos] = '9'
             string[endPos] = '9'
             newK -= 2
         }
     }
+    console.log(string[pos], string[endPos], lastCycle)
     if(string[pos] !== string[endPos]) return -1
 
     if(endPos - pos === 1 || endPos - pos === 0){
@@ -39,6 +40,6 @@ const highestPalindrome = (s, k, pos = 0, lastCycle = false) => {
         return highestPalindrome(string.join(''), newK, pos+1, lastCycle)
     }
 }
-console.log(highestPalindrome('3943', 1))
-console.log(highestPalindrome('932239', 2))
+//console.log(highestPalindrome('3943', 1))
+//console.log(highestPalindrome('932239', 2))
 console.log(highestPalindrome('1234221', 3))
